@@ -1,0 +1,45 @@
+#$ TITLE: Crossbone - DJI MSP incl. GPS
+#$ FIRMWARE_VERSION: 4.3
+#$ CATEGORY: OSD
+#$ STATUS: COMMUNITY
+#$ KEYWORDS:dpi msp, canvas mode, display port, dpi, msp
+#$ AUTHOR: Crossbone (Jack Lenders)
+
+#$ PARSER: MARKED
+
+#$ DESCRIPTION: Information:
+#$ DESCRIPTION: -----------
+#$ DESCRIPTION: DJI MSP (fpv.wtf) OSD Setup for GPS capable quads
+#$ DESCRIPTION: 
+#$ DESCRIPTION: OSD Elements Include:
+#$ DESCRIPTION: -----------
+#$ DESCRIPTION: Craft name, Avg. cell voltage, mAh drawn, Armed Time, Disarmed, Fly mode, Link Qlt., On time, Armed time
+#$ DESCRIPTION: For GPS: Sats, Speed (kmh), Home dir., Home dist.
+#$ DESCRIPTION: -----------
+#$ DISCUSSION: 
+#$ INCLUDE: presets/4.3/osd/defaults.txt
+
+set report_cell_voltage = ON
+set osd_warn_link_quality = ON
+set osd_vbat_pos = 385
+set osd_link_quality_pos = 2135
+set osd_tim_1_pos = 2455
+set osd_tim_2_pos = 2423
+set osd_flymode_pos = 2105
+set osd_mah_drawn_pos = 2433
+set osd_craft_name_pos = 2090
+set osd_display_name_pos = 41
+set osd_gps_speed_pos = 2124
+set osd_gps_sats_pos = 2081
+set osd_home_dir_pos = 2086
+set osd_home_dist_pos = 2113
+set osd_pidrate_profile_pos = 58
+set osd_warnings_pos = 14569
+set osd_avg_cell_voltage_pos = 2401
+set osd_disarmed_pos = 2314
+set osd_stat_tim_1 = ON
+set osd_stat_min_batt = OFF
+set osd_stat_endbatt = ON
+set osd_stat_battery = ON
+set osd_stat_min_rssi = OFF
+set osd_displayport_device = MSP
